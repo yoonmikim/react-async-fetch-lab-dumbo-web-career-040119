@@ -22,7 +22,7 @@ class App extends React.Component {
   render() {
     return (
         <div>
-          this.state.space.map(p => <h1 key={p.id} p={p}></h1>)
+          this.state.space.map(p => <h1 key={p.id} p={p}>{p.name}</h1>)
         </div>
       );
   }

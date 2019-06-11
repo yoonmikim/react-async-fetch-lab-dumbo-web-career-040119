@@ -7,7 +7,7 @@ class App extends React.Component {
   componentDidMount(){
     fetch("http://api.open-notify.org/astros.json")
       .then(res => res.json())
-      .then(console.log)
+      .then(data => console.log(data))
   }
   
   render() {
